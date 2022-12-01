@@ -35,19 +35,57 @@ h1 {
 .column {
   float: left;
   width: 33.3%;
-  padding: 0 10px;
-  margin-bottom: 20px;
+  padding: 20px 20px;
+  margin: 20px auto;
 }
 
 .row {
   margin: 0 -5px;
 }
 
+/* .row::after {
+  content: "";
+  display: table;
+  clear: both;
+} */
+
 .card {
   box-shadow: 10px 5px 5px #e8c4c4;
-  padding: 16px;
+  padding: 20px 15px;
   text-align: center;
   background-color: #ce7777;
+  border-radius: 20%;
+  align-items: center;
+}
+
+.recipe_img {
+  width: 200px;
+  height: 200px;
+  border-radius: 25%;
+}
+
+button {
+  border-radius: 50px;
+  border-width: 0;
+  box-shadow: #e8c4c4, white 0 3px 4px 0;
+  background-color: #e8c4c4;
+  color: #2b3a55;
+  cursor: grab;
+  display: inline-block;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 600;
+  font-size: 1em;
+  height: 30px;
+  padding: 0 25px;
+  transition: all 200ms;
+}
+
+button:hover {
+  background-color: #ce7777;
+  border-color: #2b3a55;
+  border-width: 1px;
+  transition: ease-in-out 1s;
+  box-shadow: 5px 5px 2px #2b3a55;
 }
 
 @media screen and (max-width: 600px) {

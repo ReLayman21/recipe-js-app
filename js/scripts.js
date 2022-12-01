@@ -83,8 +83,16 @@ let recipeList = [
 
 for (let i = 0; i < recipeList.length; i++) {
   if (recipeList[i].baked && "Dessert") {
-    document.write(recipeList[i].name + " are baked in the oven");
+    document.write(recipeList[i].name + " need to be baked in the oven. ");
   } else {
-    document.write(recipeList[i].name + " do not need to be baked in the oven");
+    document.write(
+      recipeList[i].name + " do not need to be baked in the oven.   "
+    );
+  }
+}
+
+for (let j = 0; j < recipeList.length; j++) {
+  if (recipeList[j].servings > 45) {
+    document.write(recipeList[j].name + " recipe makes a lot of cookies! ");
   }
 }
