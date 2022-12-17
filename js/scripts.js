@@ -81,18 +81,32 @@ let recipeList = [
   },
 ];
 
-for (let i = 0; i < recipeList.length; i++) {
-  if (recipeList[i].baked && "Dessert") {
-    document.write(recipeList[i].name + " need to be baked in the oven. ");
-  } else {
-    document.write(
-      recipeList[i].name + " do not need to be baked in the oven.   "
-    );
-  }
-}
+// for (let i = 0; i < recipeList.length; i++) {
+//   if (recipeList[i].baked && "Dessert") {
+//     document.write(recipeList[i].name + " need to be baked in the oven. ");
+//   } else {
+//     document.write(
+//       recipeList[i].name + " do not need to be baked in the oven.   "
+//     );
+//   }
+// }
 
-for (let j = 0; j < recipeList.length; j++) {
-  if (recipeList[j].servings > 45) {
-    document.write(recipeList[j].name + " recipe makes a lot of cookies! ");
+// for (let j = 0; j < recipeList.length; j++) {
+//   if (recipeList[j].servings > 45) {
+//     document.write(recipeList[j].name + " recipe makes a lot of cookies! ");
+//   }
+// }
+
+recipeList.forEach(function (recipe) {
+  if (recipe.baked) {
+    document.write(recipe.name + " need to be baked in the oven.");
+  } else {
+    document.write(recipe.name + " do not need to be baked in the oven.");
   }
-}
+});
+
+recipeList.forEach((recipe) => {
+  if (recipe.servings > 45) {
+    document.write(recipe.name + " makes a lot of cookies!");
+  }
+});
