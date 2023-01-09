@@ -5,6 +5,22 @@ body {
   color: #2b3a55;
 }
 
+.button-class {
+  border-radius: 50px;
+  border-width: 0;
+  box-shadow: #e8c4c4, white 0 3px 4px 0;
+  background-color: #e8c4c4;
+  color: #2b3a55;
+  cursor: grab;
+  display: inline-block;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 600;
+  font-size: 1em;
+  height: 30px;
+  padding: 0 25px;
+  transition: all 200ms;
+}
+
 #search {
   float: right;
   padding: 6px;
